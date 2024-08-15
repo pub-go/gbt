@@ -4,13 +4,18 @@ import (
 	"io"
 
 	"code.gopub.tech/bencode"
+	"code.gopub.tech/gbt/model"
 )
 
-func ReadMeta(r io.Reader) (meta bencode.Value, err error) {
+func ReadMeta(r io.Reader) (meta model.Meta, err error) {
 	data, err := io.ReadAll(r)
 	if err != nil {
 		return
 	}
-	meta, err = bencode.Decode(data)
+	val, err := bencode.Decode(data)
+	if err != nil {
+		return
+	}
+	meta = model.Meta(bencode.AsDict(val))
 	return
 }

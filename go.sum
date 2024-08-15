@@ -1,7 +1,7 @@
-code.gopub.tech/assert v0.0.0-20240811145449-deb7ba002468 h1:w5dcTbYhqd0R7bA38xkMjKv0p3B96zzYd0VXiiiKqXE=
-code.gopub.tech/assert v0.0.0-20240811145449-deb7ba002468/go.mod h1:Oc9A3TdfBDjPhYMyJbbg4Ys3p6/tXuatXAQTxvjHxfk=
-code.gopub.tech/bencode v0.0.0-20240811140107-22e2ae34f126 h1:SiGo4XoI5eRh4M/djUih7mLJwt0XXw3uvoslgvPQO+c=
-code.gopub.tech/bencode v0.0.0-20240811140107-22e2ae34f126/go.mod h1:3HhZUA7Dk3NW27LLGSMxg7rIoBg54ARXb6PVLlNRRMk=
+code.gopub.tech/assert v0.0.0-20240815153435-0d248961da0a h1:HvyWj0YsJOhK2IJzryRc4MF0RN+XmVe03InyfrK7Urw=
+code.gopub.tech/assert v0.0.0-20240815153435-0d248961da0a/go.mod h1:Oc9A3TdfBDjPhYMyJbbg4Ys3p6/tXuatXAQTxvjHxfk=
+code.gopub.tech/bencode v0.0.0-20240815154258-1afe87a2cac8 h1:ZGhpwsboGA/0lMdxiaBNjLmoqamGwzcogiaGlZmNg3o=
+code.gopub.tech/bencode v0.0.0-20240815154258-1afe87a2cac8/go.mod h1:p/QVXGMnMRiUyl8c9fl4CGNdWveKSuN42ivlDBB3Ph4=
 github.com/Xuanwo/go-locale v1.1.0 h1:51gUxhxl66oXAjI9uPGb2O0qwPECpriKQb2hl35mQkg=
 github.com/Xuanwo/go-locale v1.1.0/go.mod h1:UKrHoZB3FPIk9wIG2/tVSobnHgNnceGSH3Y8DY5cASs=
 github.com/antlr4-go/antlr/v4 v4.13.0 h1:lxCg3LAv+EUK6t1i0y1V6/SLeUi0eKEKdhQAlS8TVTI=

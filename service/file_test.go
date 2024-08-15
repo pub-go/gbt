@@ -13,5 +13,14 @@ func TestReadMeta(t *testing.T) {
 	assert.Nil(t, err)
 	meta, err := service.ReadMeta(f)
 	assert.Nil(t, err)
-	t.Logf("%v", meta)
+	// t.Logf("%v", meta)
+	t.Logf("%v", meta.Announce())
+	t.Logf("%v", meta.AnnounceList())
+	t.Logf("%v", meta.Comment())
+	t.Logf("%v", meta.CreationDateTime())
+	info:= meta.Info()
+	t.Logf("%v",info.Name())
+	t.Logf("%v",info.PieceLength())
+	t.Logf("%v",info.Files())
+
 }
