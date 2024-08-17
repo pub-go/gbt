@@ -7,7 +7,7 @@ import (
 	"code.gopub.tech/gbt/model"
 )
 
-func ReadMeta(r io.Reader) (meta model.Meta, err error) {
+func ReadMeta(r io.Reader) (meta model.MetaInfo, err error) {
 	data, err := io.ReadAll(r)
 	if err != nil {
 		return
@@ -16,6 +16,6 @@ func ReadMeta(r io.Reader) (meta model.Meta, err error) {
 	if err != nil {
 		return
 	}
-	meta = model.Meta(bencode.AsDict(val))
+	meta = model.MetaInfo(bencode.AsDict(val))
 	return
 }
