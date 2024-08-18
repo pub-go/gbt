@@ -3,10 +3,12 @@
 SCRIPT_DIR="$(cd "$(dirname $0)" && pwd)"
 cd $SCRIPT_DIR
 
-echo "usage: $0 [language-code]  用法：$0 [语言代码]"
+echo "usage: $0 [language_code]  用法：$0 [语言代码]"
 echo "  extract messages from go source file       从 Go 源代码中抽取翻译字符串"
 echo "  and make/update translate template file    并生成/更新给定语言的翻译文件"
+echo ""
 
+echo "extract..."
 # tree
 #    -I 忽略指定的 pattern
 #    -P 指定文件 pattern
@@ -16,8 +18,10 @@ echo "  and make/update translate template file    并生成/更新给定语言�
 #    --noreport 不要输入统计信息: x directories, y files
 # grep
 #    -v 排除以斜线结尾的
-tree -I "cmd" -P "*.go" -F -f -i --noreport .. | grep -v /$ | grep -v ^../$ |
+tree -I "cmd" -P "*.go" -F -f -i --noreport ../.. | grep -v /$ | grep -v ^../$ |
     xargs xgettext -C --add-comments=TRANSLATORS: --force-po -kT -kN:1,2 -kX:2,1c -kXN:2,3,1c -o messages.pot
+echo "extract done."
+echo ""
 
 if [ $# -eq 0 ]; then
     echo "language-code not provide, exit               未提供语言代码，退出"

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug页面</title>
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data" action="/debug/api/upload">
+        <fieldset>
+            <legend>上传 torrent 文件</legend>
+            <div>
+                <label for="file">选择要上传的文件</label>
+                <input type="file" id="file" name="file" accept=".torrent" />
+            </div>
+            <div>
+                <button>提交</button>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-11 21:15+0800\n"
+"POT-Creation-Date: 2024-08-18 21:47+0800\n"
 "PO-Revision-Date: 2024-08-11 21:15+0800\n"
 "Last-Translator: YouthLin <youthlinchen@outlook.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -18,11 +18,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../main.go:15
+#: ../../handler/debug.go:15
+msgid "failed to get upload file"
+msgstr "文件上传失败"
+
+#: ../../handler/debug.go:19
+#, c-format
+msgid "failed to open upload file: %s"
+msgstr "无法打开上传文件: %s"
+
+#: ../../handler/debug.go:23
+#, c-format
+msgid "failed to read upload file: %s"
+msgstr "读取上传文件失败: %s"
+
+#: ../../handler/ping.go:15
+msgid "pong"
+msgstr "乒 ~ 乓 ~"
+
+#: ../../main.go:47
 msgid "Hello, World"
 msgstr "你好，世界"
 
-#: ../main.go:16
+#: ../../main.go:48
 msgid "I have One appale."
 msgid_plural "I've %v apples."
 msgstr[0] "我有 %v 个苹果。"
+
+#: ../../main.go:55
+#, c-format
+msgid "app run on %s"
+msgstr "app 监听在 %s"

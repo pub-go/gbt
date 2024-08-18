@@ -1,6 +1,9 @@
 .cache/
 .vscode/
 .idea/
+conf/
+logs/
 output/
 .DS_Store
 *.cfg
+*.po~

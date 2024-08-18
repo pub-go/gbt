@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-11 21:37+0800\n"
+"POT-Creation-Date: 2024-08-18 21:47+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: ../main.go:15
+#: ../../handler/debug.go:15
+msgid "failed to get upload file"
+msgstr ""
+
+#: ../../handler/debug.go:19
+#, c-format
+msgid "failed to open upload file: %s"
+msgstr ""
+
+#: ../../handler/debug.go:23
+#, c-format
+msgid "failed to read upload file: %s"
+msgstr ""
+
+#: ../../handler/ping.go:15
+msgid "pong"
+msgstr ""
+
+#: ../../main.go:47
 msgid "Hello, World"
 msgstr ""
 
-#: ../main.go:16
+#: ../../main.go:48
 msgid "I have One appale."
 msgid_plural "I've %v apples."
 msgstr[0] ""
 msgstr[1] ""
+
+#: ../../main.go:55
+#, c-format
+msgid "app run on %s"
+msgstr ""
