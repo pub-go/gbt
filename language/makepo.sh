@@ -30,6 +30,5 @@ else
         # 初始化翻译
         echo "create/创建 $1.po ..."
         GETTEXTCLDRDIR=./cldr msginit -i messages.pot -l $1 -o $1.po
-
     fi
 fi
