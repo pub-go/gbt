@@ -9,6 +9,7 @@ import (
 	"code.gopub.tech/gbt/common/conf"
 	"code.gopub.tech/gbt/handler"
 	"code.gopub.tech/gbt/webs"
+	"code.gopub.tech/monitor"
 	"github.com/gin-gonic/gin"
 )
 
@@ -18,6 +19,10 @@ var debugResource embed.FS
 func register(r *gin.Engine) {
 	r.ContextWithFallback = true
 	r.Use(webs.Trace, webs.I18n)
+
+	r.GET(monitor.PATTERN_METRICS, func(ctx *gin.Context) {
+		monitor.HTTPHandler().ServeHTTP(ctx.Writer, ctx.Request)
+	})
 
 	api := r.Group("/api")
 	api.GET("/ping", Wrap(handler.Ping))

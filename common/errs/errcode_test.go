@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"code.gopub.tech/assert"
+	"code.gopub.tech/commons/assert"
 	"code.gopub.tech/errors"
 	"code.gopub.tech/gbt/common/errs"
 )

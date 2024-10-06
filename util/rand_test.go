@@ -3,7 +3,7 @@ package util_test
 import (
 	"testing"
 
-	"code.gopub.tech/assert"
+	"code.gopub.tech/commons/assert"
 	"code.gopub.tech/gbt/util"
 )
 

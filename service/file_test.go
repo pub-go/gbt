@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"code.gopub.tech/assert"
+	"code.gopub.tech/commons/assert"
 	"code.gopub.tech/gbt/service"
 )
 
